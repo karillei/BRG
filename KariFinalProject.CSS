@@ -1,0 +1,165 @@
+/*controls the entire page / allows the view to extend to the edge of the screen*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.video{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    z-index: -100;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(36, 36, 105);
+    padding: 1.2em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.home{
+    height: 80px;
+    width: auto;
+}
+
+.menu a {
+    display: flex;
+    float: right;
+    color: white;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: 1em; 
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: rgb(255, 102, 0);
+}
+
+.banner{
+    background: rgb(36,36,105);
+    background: linear-gradient(90deg, rgba(36,36,105,1) 40%, rgba(255,255,255,1) 100%);    
+    margin-top: -5px;
+    padding: 1.2em;
+    z-index: 1;
+}
+
+h1{
+    color: white;
+    padding-left: 5%;;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading1{
+    margin-top: 4.5em;
+}
+
+.heading2{
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+h2{
+    font-size: 1.5em;
+    font-weight: 100;
+    color: rgb(166, 171, 175);    
+}
+
+h3{
+    font-size: 3em;
+}
+
+#listings{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 300px 300px 300px;
+    grid-row-gap: 50px;
+    grid-auto-flow: dense;
+    margin-top: 50px;
+    font-size: 1em;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.freeConsultation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    background-color: rgb(117, 208, 244);
+    color: white;
+    width: 100vw;
+    margin-top: 0%;
+}
+
+h4{
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+h5{
+    font-size: 2.5em;
+}
+
+.contactButton{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 14px 28px;
+    margin-top: 2em;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.contactButton:hover{
+    color: rgb(117, 208, 244);
+    background-color: white;
+}
+
+img{
+    width: 400px;
+    height: auto;
+}
+
+button{
+    border: 2px solid rgb(166, 171, 175);
+    background-color: transparent;
+    color: rgb(166, 171, 175);
+    padding: 14px 28px;
+    margin-top: 1em;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover{
+    color: white;
+    background-color: rgb(166, 171, 175);
+}
+
+.spacer{
+    min-height: 20px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
