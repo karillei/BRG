@@ -96,6 +96,23 @@ h3{
     align-items: center;
 }
 
+@media only screen and (max-width: 1500px) {
+    #listings{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 300px 300px;
+        grid-row-gap: 20px;
+        grid-auto-flow: dense;
+        margin-top: 50px;
+        margin-bottom: 80px;
+        font-size: 0.75em;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+    }
+  }
+
 .freeConsultation{
     display: flex;
     flex-direction: column;
